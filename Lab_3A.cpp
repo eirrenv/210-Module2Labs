@@ -40,12 +40,27 @@ void printRestaurant(Restaurant newRestaurant) {
     cout << "Restaurant Address: " << newRestaurant.address << endl;
     cout << "Restaurant Recommended Meal: " << newRestaurant.bestMeal << endl;
     cout << fixed << setprecision(2) << "Recommended Meal Price: $" << newRestaurant.price << endl;
-    cout << "Restaurant Average Cost: $" << newRestaurant.avgCost << endl;
+    cout << "Restaurant Average Cost: $" << newRestaurant.avgCost << endl << endl;
 }
 
 int main() {
+    // initialize four Restaurant objects
     Restaurant firstRestaurant;
+    Restaurant secondRestaurant;
+    Restaurant thirdRestaurant;
+    Restaurant fourthRestaurant;
+
+    // add user input to all four restaurants
     firstRestaurant = createNewRestaurant();
+    secondRestaurant = createNewRestaurant();
+    thirdRestaurant = createNewRestaurant();
+    fourthRestaurant = createNewRestaurant();
+
+    // print restaurants
     printRestaurant(firstRestaurant);
+    printRestaurant(secondRestaurant);
+    printRestaurant(thirdRestaurant);
+    printRestaurant(fourthRestaurant);
+
     return 0;
 }
