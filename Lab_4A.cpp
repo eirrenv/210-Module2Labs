@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <iomanip>
+#include <cstdlib>
 using namespace std;
 
 // Color struct, containing RGB hue values in integer form
@@ -34,12 +35,17 @@ int main() {
     vector<Color> colorVector;
     Color firstColor;
 
+    int n; // initialize new random int n
+    n = rand() % 26 + 25;
+    cout << n;
     firstColor = createColor();
 
     // was already added in Milestone 1, adding comment to push update
     colorVector.push_back(firstColor);
 
     printColor(colorVector[0]);
+
+
 
     return 0;
 }
