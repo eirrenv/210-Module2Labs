@@ -36,6 +36,7 @@ int main() {
 
     firstColor = createColor();
 
+    // was already added in Milestone 1, adding comment to push update
     colorVector.push_back(firstColor);
 
     printColor(colorVector[0]);
